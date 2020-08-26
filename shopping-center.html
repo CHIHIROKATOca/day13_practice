@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style-shopping.css">
+    <script src="scripts/shopping-scripts.js" defer></script>
+    <title>Shopping</title>
+</head>
+<body>
+    <header>
+        <h1>Shopping Center</h1>
+        <div class="website-login">
+            <button id="btn-modal-show">Login</button>
+        </div>
+    </header>
+    <main>
+        <div class="box">
+            <div class="image-box">
+                <img src="images/solo-pro.png" alt="solo">
+            </div>
+            <div class="content-box">
+                <h3>Solo Pro</h3>
+                <button id="liked-button"><i class="fas fa-heart"></i></button>
+            </div>
+        </div> 
+    </main>
+    <!--Modal-->
+    <div id="modal-bg" class="modal-bg"></div>
+    <div class="container">
+        <div class="modal" id="modal">
+            <h2>Website Login</h2>
+            <form>
+                <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" id="btn" class="btn-default">Submit</button>
+            </form>
+            <button aria-label="Close modal window"  class="btn-close" id="btn-modal-close"><span aria-hidden="true">X</span></button>
+	    </div>
+    </div><!-- end container -->
+</body>
+</html>
